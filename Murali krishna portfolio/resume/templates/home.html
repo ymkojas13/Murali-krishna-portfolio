@@ -1,0 +1,48 @@
+<!doctype html>
+
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Murali Krishna Yadavalli Portfolio</title>
+  </head>
+  <body  style="background-image:url({% static 'assets/img/hero-bg.jpg' %});background-repeat:no-repeat;background-size: 1800px 800px;">
+  <div class="container">
+    <div class="center" style="position: absolute; top: 50%; width: 75%; text-align: center; font-size: 18px;">
+    <h1><font color="#5B2C6F">Murali Krishna</font></h1>
+    <div class="contianer">
+      <p>
+        <font color="pink">
+      This is Murali Krishna Yadavalli . I am a Software Developer specialised in Python Programming language and its frameworks Django, Flask etc..
+      Basically, A Full-Stack Developer!! </font>
+    </p>
+    </div>
+    <a class="btn btn-primary btn-lg" href="{% url 'aboutme' %}" role="button">About me</a><br><br>
+
+      <h1 align="center"><font color="#5B2C6F">My Projects</font></h1>
+      <br><center>
+      <a href="https://github.com/Murali1319/POCLyricsgenerator-.git" target ="blank"><h2 align="center"><font color="mustard">1.Lyrics Generator</font></h2></a>
+      <a href="https://github.com/saikrishna72/library-management.git" target ="blank"><h2 align="center"><font color="mustard">2.Library Management</font></h2></a>
+      <a href="https://github.com/ymkojas13/expense-caluclator-project.git" target ="blank"><h2 align="center"><font color="mustard">3.Expense Caluclator</font></h2></a></center>
+  </div>
+  </div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
+  </body>
+</html>
+
+{% endblock %}
